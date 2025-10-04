@@ -1,0 +1,94 @@
+.hp {
+	/*--------------------------------------------------------------
+	Forms
+	--------------------------------------------------------------*/
+	&-field {
+		&--location {
+			display: flex;
+
+			input[type=text] {
+				flex: 1;
+				padding-right: 3rem;
+			}
+
+			a {
+				flex: 0 0 3rem;
+				margin-left: -3rem;
+				text-decoration: none;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				position: relative;
+				z-index: 3;
+			}
+		}
+	}
+	/*--------------------------------------------------------------
+	Listings
+	--------------------------------------------------------------*/
+	&-listing {
+		&__location {
+			display: flex;
+			align-items: center;
+			max-width: 100%;
+
+			i {
+				margin-right: 0.5rem;
+			}
+
+			a {
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				text-decoration: none;
+				color: inherit;
+			}
+		}
+	}
+	/*--------------------------------------------------------------
+	Vendors
+	--------------------------------------------------------------*/
+	&-vendor {
+		&__location {
+			&:not(:last-child) {
+				margin-bottom: 0.5rem;
+			}
+		}
+	}
+	/*--------------------------------------------------------------
+	Maps
+	--------------------------------------------------------------*/
+	&-map {
+		&:not(:last-child) {
+			margin-bottom: 2rem;
+		}
+	}
+}
+/*--------------------------------------------------------------
+Mapbox
+--------------------------------------------------------------*/
+.mapboxgl {
+	&-ctrl-geocoder {
+		width: 100% !important;
+		max-width: none !important;
+		box-shadow: none !important;
+		min-width: auto !important;
+		z-index: 2 !important;
+
+		.suggestions-wrapper {
+			li {
+				margin-bottom: 0 !important;
+			}
+
+			a {
+				margin-left: 0 !important;
+				background-color: inherit !important;
+			}
+		}
+
+		&--icon,
+		&--pin-right {
+			display: none !important;
+		}
+	}
+}

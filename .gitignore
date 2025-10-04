@@ -1,0 +1,12 @@
+hosts.yml
+.DS_Store
+*.dump
+*.gzip
+*.sql.gz
+node_modules/
+package-lock.json
+yarn.lock
+# WordPress files
+src/wp-content/uploads/
+# src/wp-content/plugins/
+!.gitkeep
